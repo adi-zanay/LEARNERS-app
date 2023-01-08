@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar color="dark" class="text-center">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/hom2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>CAPACITOR</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img src="https://miro.medium.com/max/1104/1*_QSvxuDwVTbzZcXjU-cPDA.png"></ion-img>
+    <ion-card class="alert alert-dark">
+        <ion-card-header class="text-center">
+            <ion-card-title>CAPACITOR</ion-card-title>
+            <ion-card-subtitle>Build native mobile apps with web technology and Angular</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-button color="dark" expand="block" href="https://go.ionicframework.com/portals-for-capacitor?_gl=1*xw1946*_ga*MjAxMTA5MDcxMi4xNjU5MzI1Nzc2*_ga_REH9TJF6KF*MTY2Nzg4NjU0OS40NS4xLjE2Njc4ODY3MTcuMC4wLjA.">Portal for Capacitor</ion-button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-dark">
+        <ion-card-header>
+            <ion-card-title class="h2">The Power of Capacitor</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>Installed nearly half a million times per month and growing, Capacitor is Ionic’s solution to bridge web and native applications, providing seamless mobile experiences to users around the world. Since the release of Capacitor in May 2019,
+                thousands of companies have used the cross-platform native runtime to build web apps that run on iOS, Android, desktop, and on the web as Progressive Web Apps.</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-dark">
+        <ion-card-header>
+            <ion-card-title class="h2">Building Capacitor apps at scale</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>Capacitor apps harness the power of the web to quickly build mobile applications. However, when developing large-scale Capacitor apps, as with any mobile application, team organization can limit the potential to move even faster. Here are
+                some potential challenges large teams could face:</p>
+            <br>
+            <p> For new features to reach users, the entire application needs to be ready to ship at the same time. This lag can lead to bottlenecks in the development process and a slower shipping cadence.</p>
+            <p>Managing multiple developers can be difficult. When building Capacitor apps, a team of multiple developers—often spanning 10 or more developers—will likely work on the same code base.</p>
+        </ion-card-content>
+    </ion-card>
+    <div class="ion-padding">
+        <h3><b>Install Capacitor.</b></h3>
+        <p>Add Capacitor to your project using the ng-app schematic</p>
+        <div class="alert alert-dark">
+            <code>$ ng add capacitor/angular</code>
+        </div>
+    </div>
+    <div class="ion-padding">
+        <h3><b>Build the Web App.</b></h3>
+        <p>The compiled web assets will be copied into each Capacitor native platform during the next step.</p>
+        <div class="alert alert-dark">
+            <code>$ ng build --prod</code>
+        </div>
+    </div>
+    <div class="ion-padding">
+        <h3><b>Install the native platforms you want to target.</b><br>
+            <ion-icon name="laptop-outline"></ion-icon>&nbsp;
+            <ion-icon name="logo-android"></ion-icon>
+        </h3>
+        <p>Capacitor's native projects exist in their own top-level folders and should be considered part of your app (check them into source control).</p>
+        <div class="alert alert-dark">
+            <code>$ npm i @capacitor/ios @capacitor/android</code><br>
+            <code>$ npx cap add android</code><br>
+            <code>$ npx cap add ios</code>
+        </div>
+    </div>
+</ion-content>
