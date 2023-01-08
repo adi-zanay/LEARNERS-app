@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar color="danger" class="text-center ">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/hom"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Angular</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-img src="https://cdn.windowsreport.com/wp-content/uploads/2020/06/angular-logo-2.png"></ion-img>
+    <ion-card class="alert alert-danger">
+        <ion-card-header class="text-center">
+            <ion-card-title>ANGULAR</ion-card-title>
+            <ion-card-subtitle>The modern web developer's platform</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-button href="https://angular.io/start" expand="block" color="danger">Get Started</ion-button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <h2 class="text-center"><b>React Study Material :</b></h2>
+        </ion-card-header>
+        <ion-card-content class="ion-padding">
+            <ion-item *ngFor="let an of angular" [routerLink]="['./',an.pid]">
+                <ion-label><b>{{an.btitle}}</b></ion-label>
+                <ion-avatar slot="end">
+                    <ion-img [src]="an.bimgUrl"></ion-img>
+                </ion-avatar>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+    <div class="ion-padding">
+        <ion-card-title>Introduction to Angular</ion-card-title>
+        <ion-card-content>Angular is an open-source, JavaScript framework written in TypeScript. Google maintains it, and its primary purpose is to develop single-page applications. As a framework, Angular has clear advantages while also providing a standard structure
+            for developers to work with. It enables users to create large applications in a maintainable manner. </ion-card-content>
+    </div>
+    <ion-card class="alert alert-danger">
+        <ion-card-header>
+            <ion-img src="https://angular.io/generated/images/marketing/home/responsive-framework.svg"></ion-img><br>
+            <h2><b class="text-danger">DEVELOP ACROSS ALL PLATFORM</b></h2>
+        </ion-card-header>
+        <ion-card-content>
+            Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-danger">
+        <ion-card-header>
+            <ion-img src="https://angular.io/generated/images/marketing/home/speed-performance.svg"></ion-img><br>
+            <h2><b class="text-danger">SPEED & PERFORMANCE</b></h2>
+        </ion-card-header>
+        <ion-card-content>
+            Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-danger">
+        <ion-card-header>
+            <ion-img src="https://angular.io/generated/images/marketing/home/joyful-development.svg"></ion-img><br>
+            <h2><b class="text-danger">INCREDIBLE TOOLING</b></h2>
+        </ion-card-header>
+        <ion-card-content>
+            Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes
+            together so you can focus on building amazing apps rather than trying to make the code work.
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-danger">
+        <ion-card-header>
+            <ion-img src="https://angular.io/generated/images/marketing/home/loved-by-millions.svg"></ion-img><br>
+            <h2><b class="text-danger">LOVED BY MILLIONS</b></h2>
+        </ion-card-header>
+        <ion-card-content>
+            From prototype through global deployment, Angular delivers the productivity and scalable infrastructure that supports Google's largest applications.
+        </ion-card-content>
+    </ion-card><br>
+    <div class="ion-padding alert alert-danger text-center">
+        <b><h1><ion-icon slot="start" name="code-slash"></ion-icon></h1></b>
+        <h1 class="text-secondary text-center">TRY IT NOW</h1>
+        <p>Explore Angular's capabilities with a ready-made sample app. No setup required.</p>
+    </div>
+</ion-content>

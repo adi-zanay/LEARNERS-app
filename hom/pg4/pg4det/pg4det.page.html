@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar color="danger" class="text-center text-dark">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/pg4"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{angular.btitle}}</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <h2 class="ion-padding text-center"><b>{{angular.btitle}}</b></h2>
+    </div>
+    <ion-img [src]="angular.bimgUrl"></ion-img>
+    <ion-card class="ion-padding alert alert-info">
+        <div>
+            <ion-label>Rating :
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                (143)
+            </ion-label>
+        </div><br>
+        <ion-label><b>Author :</b> {{angular.bauthor}}</ion-label><br>
+        <ion-label><b>Publisher :</b> {{angular.bpublisher}}</ion-label><br><br>
+        <ion-label><b>Description :</b><br>{{angular.bdescri}}</ion-label>
+        <ion-card color="danger">
+            <h2 class="ion-padding-top text-center">Price :</h2>
+            <ion-card-title class="text-center ion-padding">{{angular.bprice | currency: 'INR'}}</ion-card-title>
+        </ion-card>
+        <ion-button color="danger" expand="block" [href]="angular.buylink">
+            <ion-icon slot=" start " name="wallet "></ion-icon> Buy Now
+        </ion-button>
+    </ion-card>
+</ion-content>

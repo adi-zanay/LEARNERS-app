@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-toolbar color="secondary" class="text-center text-dark">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/hom"></ion-back-button>
+        </ion-buttons>
+        <ion-title>REACT</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content><br>
+    <ion-img src="https://d1xple9gxb4tux.cloudfront.net/assets/images/article_images/1a3b9a15310bedcc02bd8f6718f0beff6e4ce8d0.png?1553520220"></ion-img>
+    <ion-card class="alert alert-info">
+        <ion-card-header class="text-center">
+            <ion-card-title>REACT</ion-card-title>
+            <ion-card-subtitle>A JavaScript library for building user interfaces</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-button expand="block" color="secondary" href="https://reactjs.org/docs/getting-started.html">Get Started</ion-button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <h2 class="text-center"><b>React Study Material :</b></h2>
+        </ion-card-header>
+        <ion-card-content class="ion-padding">
+            <ion-item *ngFor="let re of pagee" [routerLink]="['./',re.pid]">
+                <ion-label><b>{{re.btitle}}</b></ion-label>
+                <ion-avatar slot="end">
+                    <ion-img [src]="re.bimgUrl"></ion-img>
+                </ion-avatar>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class=" alert alert-info ">
+        <ion-card-header>
+            <ion-card-title>Declarative</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. <br> <br> Declarative views make your
+                code more predictable and easier to debug.</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-info ">
+        <ion-card-header>
+            <ion-card-title>Component Based</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>Build encapsulated components that manage their own state, then compose them to make complex UIs. <br>
+                <br> Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="alert alert-info ">
+        <ion-card-header>
+            <ion-card-title>Learn Once, Write Anywhere</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <p>We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. <br><br> React can also render on the server using Node and power mobile apps using React Native.</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

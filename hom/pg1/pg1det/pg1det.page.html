@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar color="secondary" class="text-center text-dark">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/pg1"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{react.btitle}}</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <h2 class="ion-padding text-center"><b>{{react.btitle}}</b></h2>
+    </div>
+    <ion-img [src]="react.bimgUrl"></ion-img>
+    <ion-card class="ion-padding alert alert-info">
+        <div>
+            <ion-label>Rating :
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half"></ion-icon>
+                (402)
+            </ion-label>
+        </div><br>
+        <ion-label><b>Author :</b> {{react.bauthor}}</ion-label><br>
+        <ion-label><b>Publisher :</b> {{react.bpublisher}}</ion-label><br><br>
+        <ion-label><b>Description :</b><br>{{react.bdescri}}</ion-label>
+        <ion-card color="secondary">
+            <h2 class="ion-padding-top text-center text-dark">Price :</h2>
+            <ion-card-title class="text-center ion-padding text-dark">{{react.bprice | currency: 'INR'}}</ion-card-title>
+        </ion-card>
+        <ion-button color="secondary" expand="block" class="text-dark" [href]="react.buylink">
+            <ion-icon slot=" start " name="wallet "></ion-icon> Buy Now
+        </ion-button>
+    </ion-card>
+</ion-content>

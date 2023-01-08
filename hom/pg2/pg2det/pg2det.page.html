@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar color="dark" class="text-center">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/pg2"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{capaci.btitle}}</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button href="/hom">
+                <ion-icon name="home-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <h2 class="ion-padding text-center "><b>{{capaci.btitle}}</b></h2>
+    </div>
+    <ion-img [src]="capaci.bimgUrl "></ion-img>
+    <ion-card class="ion-padding alert alert-dark">
+        <div>
+            <ion-label>Rating :
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                (23)
+            </ion-label>
+        </div><br>
+        <ion-label><b>Author :</b> {{capaci.bauthor}}</ion-label><br>
+        <ion-label><b>Publisher :</b> {{capaci.bpublisher}}</ion-label><br><br>
+        <ion-label><b>Description :</b><br>{{capaci.bdescri}}</ion-label>
+        <ion-card color="dark">
+            <h2 class="ion-padding-top text-center">Price :</h2>
+            <ion-card-title class="text-center ion-padding">{{capaci.bprice | currency: 'INR'}}</ion-card-title>
+        </ion-card>
+        <ion-button color="dark" expand="block" [href]="capaci.buylink ">
+            <ion-icon slot=" start" name="wallet "></ion-icon> Buy Now
+        </ion-button>
+    </ion-card>
+</ion-content>
